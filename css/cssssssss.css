@@ -1,0 +1,79 @@
+* {
+    margin: 2px;
+    padding: 2px;
+    border-size: border-box;
+
+}
+
+nav{
+    justify-content: space-around;
+    display: flex;
+    min-height: 8vh;
+    background-color: dimgray;
+    font-family: "Arial Black";
+    text-align: left;
+}
+
+nav div{
+    display: inline-block;
+}
+
+.logo{
+    letter-spacing: 5px;
+    font-size: 20px;
+    float: left;
+}
+
+
+
+.navLinks{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+}
+
+.navLinks li{
+    list-style: none;
+}
+.navLinks a{
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.navLinks a:hover{
+    background-color: darkolivegreen;
+    width: 20px;
+    cursor: alias;
+
+}
+
+h2{
+    color: darkolivegreen;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px){
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
