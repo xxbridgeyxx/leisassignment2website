@@ -1,29 +1,65 @@
 * {
     margin: 2px;
     padding: 2px;
-    border-size: border-box;
 
 }
 
+
+body{
+    background-color: #aaaaaa;
+    font-family: "arial";
+    color: #817056;
+}
+
+#titleH1{
+    color: black;
+    font-style: unset;
+    font-size: 50px;
+}
+h2{
+    color: orange;
+}
+
+p{
+    color: orange;
+}
+
+
 nav{
     justify-content: space-around;
-    display: flex;
     min-height: 8vh;
-    background-color: dimgray;
+    background-color: #333333;
     font-family: "Arial Black";
     text-align: left;
+    border-style: solid;
+    border-width: 2px;
 }
 
 nav div{
     display: inline-block;
+    margin-top: 15px;
+    border-style: solid;
+    border-width: 2px;
+
+
 }
 
 .logo{
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 30px;
     float: left;
+    color: black;
+    border-style: none;
+
 }
 
+.dropDown{
+    float: right;
+    color: #333333;
+    position: relative;
+    height: 4px;
+
+}
 
 
 .navLinks{
@@ -31,10 +67,12 @@ nav div{
     display: flex;
     justify-content: space-around;
     font-size: 10px;
+    float: right;
 }
 
 .navLinks li{
     list-style: none;
+    color: #333333;
 }
 .navLinks a{
     text-decoration: none;
@@ -42,27 +80,116 @@ nav div{
 }
 
 .navLinks a:hover{
-    background-color: darkolivegreen;
-    width: 20px;
-    cursor: alias;
+    background-color: orangered;
+    width: 40px;
+    cursor: pointer;
 
 }
 
-h2{
-    color: darkolivegreen;
+#categoryTable{
+    position: marker;
+
+}
+
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-color: dimgrey;
+}
+
+#categoryTable {
+    border-style: solid;
+}
+
+.product {
+    position: relative;
+    width: 22.5%;
+    margin: 0px;
+    display: inline-block;
+}
+
+
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 75%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middleProduct {
+    transition: .5s ease;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.middleProduct {
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text {
+    background-color: darkslategray;
+    color: #333333;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.containerOne:hover .product {
+    opacity: 0.7;
+}
+
+.containerOne:hover .product {
+    opacity: 1;
+}
+
+#main-content{
+    visibility: visible;
+    margin: auto;
+    width: 77%;
+    height: 99.3%;
+    border-style: solid;
+    background-color: #333334;
+    border-top: 1px;
+    border-bottom: 1px;
+}
+
+#box-one-about{
+    height: 300px;
+    width: 200px;
+    border-width: 10px;
+    position: center;
+}
+
+#box-two-about{
+    height: 300px;
+    width: 200px;
+    border-width: 40px;
+    position: relative;
 }
 
 /* Footer */
 .footer {
-    padding: 20px;
     text-align: center;
     background: #ddd;
-    position: fixed;
-    width: 100%;
-    bottom: 10px;
+    width: 98%;
+    height: 5%;
+    border-style: solid;
+    position: absolute;
+    bottom: revert;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
@@ -70,10 +197,70 @@ h2{
     }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px){
     .topnav a {
         float: none;
         width: 100%;
     }
 }
+
+#products div{
+    width: 100%;
+    height: 80%;
+    border-style: solid;
+    position: center;
+    align-items: baseline;
+    min-height: max-content;
+    color: #dddddd;
+
+}
+.redirectButton{
+    background-color: orangered;
+
+}
+
+#rightDiv{
+    width: 200px;
+    align-content: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+

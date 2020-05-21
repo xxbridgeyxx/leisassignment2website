@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Page</title>
+    <link rel="stylesheet" href="../css/cssssssss.css">
+</head>
+<body>
+
+<nav id="navigation">
+    <div class="logo">
+        WETLANDS
+    </div>
+    <div>
+        <ul class="navLinks">
+            <li>
+                <a href="ABOUTUS.html">Home</a>
+            </li>
+            <li>
+                <a>About Us</a>
+            </li>
+            <li>
+                <a>Products</a>
+            </li>
+            <li>
+                <a>Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div id="categoryTable">
+        <table id="products">
+
+            <tr>
+                <td><a href="checkoutpage.html"><button class="redirectButton">Lizard button</button></a></td>
+
+                <td><a href="snakepage.html"><button class="redirectButton">Snake button</button></a></td>
+
+                <td><a href="#"><button class="redirectButton">Reptile button</button></a></td>
+
+                <td><a href="productpg.html"><button class="redirectButton">Fish button</button></a></td>
+            </tr>
+        </table>
+    </div>
+</nav>
+
+
+<main id="main-content">
+
+        <h1 id="titleH1">SSSSSNAKE FOOD</h1>
+
+    <div class="product">
+        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image" style="width:100%"/>
+        <div class="middle">
+            <button id = "addWorms" onclick="addProductToCart(this.id)">
+                <div class="text">Add to Cart</div>
+                <input placeholder="qty" type="number" id = "wormQty">
+            </button>
+        </div>
+    <p>Worms</p>
+        <p>Price $50.00</p>
+
+    </div>
+
+    <div class="product">
+        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image" style="width:100%"/>
+            <p>Product name</p>
+            <p>Product price</p>
+        <div class="middle">
+            <button id = "addMilk" onclick="addProductToCart(this.id)">
+                <div class="text">Add to Cart</div>
+            </button>
+            <input placeholder="qty" type="number" id = "milkQty">
+        </div>
+    </div>
+<!--    <div class="product">-->
+<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+<!--        <div class="middle">-->
+<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+<!--        </div>-->
+<!--        <h2>Product name</h2>-->
+<!--        <p>Product price</p>-->
+<!--    </div>-->
+<!--    <div class="product">-->
+<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+<!--        <div class="middle">-->
+<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+<!--        </div>-->
+<!--        <h2>Product name</h2>-->
+<!--        <p>Product price</p>-->
+<!--    </div>-->
+<!--    <div class="product">-->
+<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+<!--        <div class="middle">-->
+<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+<!--        </div>-->
+<!--        <h2>Product name</h2>-->
+<!--        <p>Product price</p>-->
+<!--    </div>-->
+<!--    <div class="product">-->
+<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+<!--        <div class="middle">-->
+<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+<!--        </div>-->
+<!--        <h2>Product name</h2>-->
+<!--        <p>Product price</p>-->
+<!--    </div>-->
+<!--    <div class="product">-->
+<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+<!--        <div class="middle">-->
+<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+<!--        </div>-->
+<!--        <h2>Product name</h2>-->
+<!--        <p>Product price</p>-->
+<!--    </div>-->
+<!--    <div class="product">-->
+<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+<!--        <div class="middle">-->
+<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+<!--        </div>-->
+<!--        <h2>Product name</h2>-->
+<!--        <p>Product price</p>-->
+<!--    </div>-->
+    <div id="rightDiv">
+        <h2>Cart</h2>
+        <button id ="checkOut" onclick="invoice()">Check out</button>
+    </div>
+
+</main>
+<!-- The Invoice -->
+<div id="myModal" class="modal">
+
+    <!-- Invoice content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id = "invoicePlace">Invoice</div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <h2>&copy; Unitec Instiute of Technology</h2>
+</footer>
+</body>
+</html>
