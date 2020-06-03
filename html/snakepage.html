@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Snake Page</title>
     <link rel="stylesheet" href="../css/cssssssss.css">
+    <script src="../js/productpg.js"></script>
 </head>
 <body>
 
@@ -31,13 +32,21 @@
         <table id="products">
 
             <tr>
-                <td><a href="checkoutpage.html"><button class="redirectButton">Lizard button</button></a></td>
+                <td><a href="checkoutpage.html">
+                    <button class="redirectButton">Lizard button</button>
+                </a></td>
 
-                <td><a href="snakepage.html"><button class="redirectButton">Snake button</button></a></td>
+                <td><a href="snakepage.html">
+                    <button class="redirectButton">Snake button</button>
+                </a></td>
 
-                <td><a href="#"><button class="redirectButton">Reptile button</button></a></td>
+                <td><a href="#">
+                    <button class="redirectButton">Reptile button</button>
+                </a></td>
 
-                <td><a href="productpg.html"><button class="redirectButton">Fish button</button></a></td>
+                <td><a href="productpg.html">
+                    <button class="redirectButton">Fish button</button>
+                </a></td>
             </tr>
         </table>
     </div>
@@ -46,83 +55,97 @@
 
 <main id="main-content">
 
-        <h1 id="titleH1">SSSSSNAKE FOOD</h1>
+    <h1 id="titleH1">SSSSSNAKE FOOD</h1>
+
+    <div id="cart">
+        <h3>Add to Cart</h3>
+    </div>
 
     <div class="product">
-        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image" style="width:100%"/>
-        <div class="middle">
-            <button id = "addWorms" onclick="addProductToCart(this.id)">
-                <div class="text">Add to Cart</div>
-                <input placeholder="qty" type="number" id = "wormQty">
+        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image"
+             style="width:100%" onmouseover="showBtnPrice(this)" onmouseleave="hideBtnPrice(this)"/>
+
+        <div class="middleProduct">
+
+            <input placeholder="qty" type="number" id="wormQty">
+
+            <button id="addWorms" onmouseover="keepBtnPrice(this)" onclick="addProductToCart(this.id)">
+                Add to Cart
             </button>
+
         </div>
-    <p>Worms</p>
+        <p>Worms</p>
         <p>Price $50.00</p>
 
     </div>
 
     <div class="product">
-        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image" style="width:100%"/>
-            <p>Product name</p>
-            <p>Product price</p>
-        <div class="middle">
-            <button id = "addMilk" onclick="addProductToCart(this.id)">
-                <div class="text">Add to Cart</div>
+        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image"
+             style="width:100%" onmouseover="showBtnPrice(this)" onmouseleave="hideBtnPrice(this)"/>
+
+        <div class="middleProduct">
+
+            <input placeholder="qty" type="number" id="milkQty">
+
+            <button id="addMilk" onmouseover="keepBtnPrice(this)" onclick="addProductToCart(this.id)">
+                Add to Cart
             </button>
-            <input placeholder="qty" type="number" id = "milkQty">
+
         </div>
+        <p>Product name</p>
+        <p>Product price</p>
     </div>
-<!--    <div class="product">-->
-<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
-<!--        <div class="middle">-->
-<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
-<!--        </div>-->
-<!--        <h2>Product name</h2>-->
-<!--        <p>Product price</p>-->
-<!--    </div>-->
-<!--    <div class="product">-->
-<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
-<!--        <div class="middle">-->
-<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
-<!--        </div>-->
-<!--        <h2>Product name</h2>-->
-<!--        <p>Product price</p>-->
-<!--    </div>-->
-<!--    <div class="product">-->
-<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
-<!--        <div class="middle">-->
-<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
-<!--        </div>-->
-<!--        <h2>Product name</h2>-->
-<!--        <p>Product price</p>-->
-<!--    </div>-->
-<!--    <div class="product">-->
-<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
-<!--        <div class="middle">-->
-<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
-<!--        </div>-->
-<!--        <h2>Product name</h2>-->
-<!--        <p>Product price</p>-->
-<!--    </div>-->
-<!--    <div class="product">-->
-<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
-<!--        <div class="middle">-->
-<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
-<!--        </div>-->
-<!--        <h2>Product name</h2>-->
-<!--        <p>Product price</p>-->
-<!--    </div>-->
-<!--    <div class="product">-->
-<!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
-<!--        <div class="middle">-->
-<!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
-<!--        </div>-->
-<!--        <h2>Product name</h2>-->
-<!--        <p>Product price</p>-->
-<!--    </div>-->
+    <!--    <div class="product">-->
+    <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+    <!--        <div class="middle">-->
+    <!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+    <!--        </div>-->
+    <!--        <h2>Product name</h2>-->
+    <!--        <p>Product price</p>-->
+    <!--    </div>-->
+    <!--    <div class="product">-->
+    <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+    <!--        <div class="middle">-->
+    <!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+    <!--        </div>-->
+    <!--        <h2>Product name</h2>-->
+    <!--        <p>Product price</p>-->
+    <!--    </div>-->
+    <!--    <div class="product">-->
+    <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+    <!--        <div class="middle">-->
+    <!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+    <!--        </div>-->
+    <!--        <h2>Product name</h2>-->
+    <!--        <p>Product price</p>-->
+    <!--    </div>-->
+    <!--    <div class="product">-->
+    <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+    <!--        <div class="middle">-->
+    <!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+    <!--        </div>-->
+    <!--        <h2>Product name</h2>-->
+    <!--        <p>Product price</p>-->
+    <!--    </div>-->
+    <!--    <div class="product">-->
+    <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+    <!--        <div class="middle">-->
+    <!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+    <!--        </div>-->
+    <!--        <h2>Product name</h2>-->
+    <!--        <p>Product price</p>-->
+    <!--    </div>-->
+    <!--    <div class="product">-->
+    <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640"alt="product" class="image" style="width:100%"/>-->
+    <!--        <div class="middle">-->
+    <!--            <button><a href="checkoutpage.html"><div class="text">Add to Cart</div></a><input placeholder="qty" type="number" id="wormQty"></button>-->
+    <!--        </div>-->
+    <!--        <h2>Product name</h2>-->
+    <!--        <p>Product price</p>-->
+    <!--    </div>-->
     <div id="rightDiv">
         <h2>Cart</h2>
-        <button id ="checkOut" onclick="invoice()">Check out</button>
+        <button id="checkOut" onclick="invoice()">Check out</button>
     </div>
 
 </main>
@@ -132,7 +155,7 @@
     <!-- Invoice content -->
     <div class="modal-content">
         <span class="close">&times;</span>
-        <div id = "invoicePlace">Invoice</div>
+        <div id="invoicePlace">Invoice</div>
     </div>
 
 </div>
