@@ -2,6 +2,7 @@
 function addProductToCart(buttonID) {
     cart = document.getElementById("rightDiv");
     switch (buttonID) {
+
         case "addWorm":
             qty = document.getElementById("wormQty").value;
             addHTML = document.createElement("p");
@@ -10,14 +11,43 @@ function addProductToCart(buttonID) {
             console.log(addHTML);
             cart.insertBefore(addHTML, document.getElementById("checkOut"));
             break;
-        case "addMilk":
-            qty = document.getElementById("milkQty").value;
+
+            case "addFlakes":
+            qty = document.getElementById("flakeQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Flake: "+qty+" Price: <strong class='price'>"+(3*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
+            case "addPebbles":
+            qty = document.getElementById("pebbleQty").value;
             addHTML = document.createElement("p");
             addHTML.className="orderedProducts";
             addHTML.innerHTML = "Milk: "+qty+" Price: <strong class='price'>"+(3*Number(qty)) +"</strong>";
             console.log(addHTML);
             cart.insertBefore(addHTML, document.getElementById("checkOut"));
             break;
+
+            case "addWeed":
+            qty = document.getElementById("weedQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Milk: "+qty+" Price: <strong class='price'>"+(3*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
+        case "addRocks":
+            qty = document.getElementById("rockQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Milk: "+qty+" Price: <strong class='price'>"+(3*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
     }
 }
 
