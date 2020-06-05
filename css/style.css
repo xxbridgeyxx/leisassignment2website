@@ -1,25 +1,28 @@
+* {
+    margin: 2px;
+    padding: 2px;
+
+}
 body{
-    color: white;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/5jv1_tumblr_mwp7fhxwf91skardgo1_400.gif');
+ background-size: unset;
+
+
+    height: 100vh;
+    padding:0;
+    margin:0;
 }
 
-header{
-    font-family: "Arial Black";
-    color: rosybrown;
-    font-size: 88px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+h1{
+    font-size: 250px;
 }
-#logoCircle{
-    position: center;
-    background: lightblue;
+
+.circle {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    color: #817056;
+    /* width and height can be anything, as long as they're equal */
 }
 
 button{
@@ -38,23 +41,6 @@ nav{
     background-color: #333333;
 }
 
-nav div{
-    display: inline-block;
-    margin-top: 15px;
-    border-style: solid;
-    border-width: 2px;
-
-
-}
-
-.logo{
-    letter-spacing: 5px;
-    font-size: 50px;
-    float: left;
-    color: black;
-    border-style: none;
-
-}
 
 .navLinks{
     background-color: rgba(8,82,89,0.82);
@@ -97,6 +83,7 @@ nav div{
     border-style: solid;
     position: absolute;
     bottom: revert;
+    display: inline-block;
 }
 
 

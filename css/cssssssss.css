@@ -7,8 +7,7 @@
 
 body{
     background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(21,22,20,0.8337710084033614) 48%, rgba(45,107,253,1) 100%);
-    font-family: "arial";
+    background-image: linear-gradient(to left bottom, #37609f, #30679e, #2f6e9b, #367396, #417892, #46849b, #4c8fa3, #549bab, #54b2c0, #54cad3, #57e2e3, #5ffbf1);    font-family: "arial";
     color: #817056;
 }
 
@@ -17,11 +16,10 @@ body{
     font-style: unset;
     font-size: 50px;
     align-content: center;
+    font-weight: lighter;
 }
 
-h1{
-    color: #02746d;
-}
+
 
 h2{
     color: #333333;
@@ -33,7 +31,7 @@ h3{
 }
 
 p{
-    color: orange;
+    color: black;
 }
 
 
@@ -57,12 +55,12 @@ nav div{
 }
 
 .logo{
-    letter-spacing: 5px;
-    font-size: 50px;
+    letter-spacing: 30px;
+    font-size: 40px;
     float: left;
     color: black;
     border-style: none;
-
+    font-weight: bolder;
 }
 
 .navLinks{
@@ -143,9 +141,9 @@ nav div{
     visibility: visible;
     margin: auto;
     width: 77%;
-    height: 99.3%;
     border-style: solid;
-    background-color: #333334;
+    height: 100vh;
+    background-color: #817056;
     border-top: 1px;
     border-bottom: 1px;
 }
@@ -246,6 +244,8 @@ nav div{
     text-decoration: none;
     cursor: pointer;
 }
+
+
 
 
 

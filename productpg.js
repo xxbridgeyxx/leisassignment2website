@@ -68,14 +68,6 @@ function invoice() {
     }
 
 
-// When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-
     //Take everything from shopping cart
     cart = document.getElementById("rightDiv");
     items = document.getElementsByClassName("orderedProducts");
@@ -100,6 +92,13 @@ function invoice() {
     text += "<p>Total: $"+total+"</p>";
     invoicePlace.innerHTML = text;
 }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 
 function showBtnPrice(e) {
     nextDiv = e.nextElementSibling;
@@ -114,3 +113,5 @@ function hideBtnPrice(e) {
 function keepBtnPrice(e){
     nextDiv.style.display="block";
 }
+
+
