@@ -2,21 +2,21 @@
 function addProductToCart(buttonID) {
     cart = document.getElementById("rightDiv");
     switch (buttonID) {
-
-        case "addWorm":
-            qty = document.getElementById("wormQty").value;
-            addHTML = document.createElement("p");
-            addHTML.className="orderedProducts";
-            addHTML.innerHTML = "Worms: "+qty+" Price: <strong class='price'>" +(2*Number(qty)) +"</strong>";
-            console.log(addHTML);
-            cart.insertBefore(addHTML, document.getElementById("checkOut"));
-            break;
+        //
+        // case "addWorm":
+        //     qty = document.getElementById("wormQty").value;
+        //     addHTML = document.createElement("p");
+        //     addHTML.className="orderedProducts";
+        //     addHTML.innerHTML = "Worms: "+qty+" Price: <strong class='price'>" +(*Number(qty)) +"</strong>";
+        //     console.log(addHTML);
+        //     cart.insertBefore(addHTML, document.getElementById("checkOut"));
+        //     break;
 
             case "addFlakes":
             qty = document.getElementById("flakeQty").value;
             addHTML = document.createElement("p");
             addHTML.className="orderedProducts";
-            addHTML.innerHTML = "Flake: "+qty+" Price: <strong class='price'>"+(3*Number(qty)) +"</strong>";
+            addHTML.innerHTML = "Flake: "+qty+" Price: <strong class='price'>"+(50*Number(qty)) +"</strong>";
             console.log(addHTML);
             cart.insertBefore(addHTML, document.getElementById("checkOut"));
             break;
@@ -67,7 +67,6 @@ function invoice() {
         modal.style.display = "none";
     }
 
-
     //Take everything from shopping cart
     cart = document.getElementById("rightDiv");
     items = document.getElementsByClassName("orderedProducts");
@@ -92,6 +91,7 @@ function invoice() {
     text += "<p>Total: $"+total+"</p>";
     invoicePlace.innerHTML = text;
 }
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -113,5 +113,3 @@ function hideBtnPrice(e) {
 function keepBtnPrice(e){
     nextDiv.style.display="block";
 }
-
-

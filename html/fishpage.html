@@ -87,16 +87,16 @@
         </div>
 
         <div class="product">
-            <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image"
-                 style="width:100%" onmouseover="showBtnPrice(this)" onmouseleave="hideBtnPrice(this)"/>
+            <p><img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image"
+                 style="width:100%" onmouseover="showBtnPrice(this)" onmouseleave="hideBtnPrice(this)"/></p>
 
             <div class="middleProduct">
 
                 <input placeholder="qty" type="number" id="pebbleQty">
 
-                <button id="addPebbles" onmouseover="keepBtnPrice(this)" onclick="addProductToCart(this.id)">
+               <p> <button id="addPebbles" onmouseover="keepBtnPrice(this)" onclick="addProductToCart(this.id)">
                     Add to Cart
-                </button>
+                </button></p>
 
             </div>
             <p>Gummy Pebbles</p>
@@ -120,92 +120,15 @@
             </div>
             <p>Fizzy Rocks</p>
             <p>Price $59.69</p>
-
         </div>
-
-        <!--    <div class="product">-->
-        <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image"-->
-        <!--             style="width:100%" onmouseover="showBtnPrice(this)" onmouseleave="hideBtnPrice(this)"/>-->
-
-        <!--        <div class="middleProduct">-->
-
-        <!--            <input placeholder="qty" type="number" id="milkQty">-->
-
-        <!--            <button id="addMilk" onmouseover="keepBtnPrice(this)" onclick="addProductToCart(this.id)">-->
-        <!--                Add to Cart-->
-        <!--            </button>-->
-
-        <!--        </div>-->
-        <!--        <p>Product name</p>-->
-        <!--        <p>Product price</p>-->
-
-        <!--    </div>-->
-
-        <!--    <div class="product">-->
-        <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image"-->
-        <!--             style="width:100%" onmouseover="showBtnPrice(this)" onmouseleave="hideBtnPrice(this)"/>-->
-
-        <!--        <div class="middleProduct">-->
-
-        <!--            <input placeholder="qty" type="number" id="milkQty">-->
-
-        <!--            <button id="addMilk" onmouseover="keepBtnPrice(this)" onclick="addProductToCart(this.id)">-->
-        <!--                Add to Cart-->
-        <!--            </button>-->
-
-        <!--        </div>-->
-        <!--        <p>Product name</p>-->
-        <!--        <p>Product price</p>-->
-
-        <!--    </div>-->
-
-        <!--    <div class="product">-->
-        <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image"-->
-        <!--             style="width:100%" onmouseover="showBtnPrice(this)" onmouseleave="hideBtnPrice(this)"/>-->
-
-        <!--        <div class="middleProduct">-->
-
-        <!--            <input placeholder="qty" type="number" id="milkQty">-->
-
-        <!--            <button id="addMilk" onmouseover="keepBtnPrice(this)" onclick="addProductToCart(this.id)">-->
-        <!--                Add to Cart-->
-        <!--            </button>-->
-
-        <!--        </div>-->
-        <!--        <p>Product name</p>-->
-        <!--        <p>Product price</p>-->
-
-        <!--    </div>-->
-
-        <!--    <div class="product">-->
-        <!--        <img src="../images/frog-4522963_1920.jpg" height="426.67" width="640" alt="product" class="image"-->
-        <!--             style="width:100%" onmouseover="showBtnPrice(this)" onmouseleave="hideBtnPrice(this)"/>-->
-
-        <!--        <div class="middleProduct">-->
-
-        <!--            <input placeholder="qty" type="number" id="milkQty">-->
-
-        <!--            <button id="addMilk" onmouseover="keepBtnPrice(this)" onclick="addProductToCart(this.id)">-->
-        <!--                Add to Cart-->
-        <!--            </button>-->
-
-        <!--        </div>-->
-        <!--        <p>Product name</p>-->
-        <!--        <p>Product price</p>-->
-
-        <!--    </div>-->
-
-
-
+    </div>
+    <div id="rightDiv">
+        <h2>Cart</h2>
+        <button id="checkOut" onclick="invoice()">Check out</button>
     </div>
 </main>
 
-<div id="rightDiv">
-    <h2>Cart</h2>
-    <button id="checkOut" onclick="invoice()">Check out</button>
-</div>
 
-</main>
 <!-- The Invoice -->
 <div id="myModal" class="modal">
 
@@ -221,7 +144,7 @@
 
 
 <footer class="footer">
-    <h2>Footer</h2>
+    <h2>&copy; Unitec Instiute of Technology</h2>
 </footer>
 
 </body>

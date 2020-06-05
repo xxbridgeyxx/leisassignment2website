@@ -4,6 +4,9 @@
 
 }
 
+html,body{
+    height: 100%;
+}
 
 body{
     background: rgb(34,193,195);
@@ -21,8 +24,8 @@ body{
 
 
 
-h2{
-    color: #333333;
+h3{
+    color: #00a698;
 
 }
 
@@ -34,6 +37,9 @@ p{
     color: black;
 }
 
+.circle{
+    font-size: 100px;
+}
 
 nav{
     justify-content: space-around;
@@ -165,12 +171,11 @@ nav div{
 /* Footer */
 .footer {
     text-align: center;
-    background: #ddd;
+    background: #333634;
     width: 98%;
     height: 5%;
     border-style: solid;
     position: absolute;
-    bottom: revert;
 }
 
 @media screen and (max-width: 800px) {
@@ -205,6 +210,8 @@ nav div{
 #rightDiv{
     width: 200px;
     align-content: center;
+    position: revert;
+    background: #333634;
 }
 
 /* The Modal (background) */
